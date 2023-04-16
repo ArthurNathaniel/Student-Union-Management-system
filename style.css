@@ -22,7 +22,6 @@ body{
   /* Add margin to the logo */
   .sidebar .logo {
     margin-bottom: 20px;
-    margin-top: 80px;
   }
   /* Set the main content to take up the remaining height */
   .main-content {
