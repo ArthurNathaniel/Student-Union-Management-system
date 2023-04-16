@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+.catholic{
+    overflow-x: hidden;
+}
+.sidebar {
+    height: 100vh;
+    background-color: #f6f4f9;
+    padding: 10px;
+  }
+  /* Set the sidebar text color */
+  .sidebar .nav-link {
+    color: #333;
+  }
+  /* Add padding to the sidebar links */
+  .sidebar .nav-link {
+    padding: 10px;
+  }
+  /* Add margin to the logo */
+  .sidebar .logo {
+    margin-bottom: 20px;
+  }
+  /* Set the main content to take up the remaining height */
+  .main-content {
+    height: 100vh;
+    padding: 10px;
+  }
+  /* Set the button to be fixed at the bottom */
+  .btn-bottom {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .member-registration{
+    padding: 0 5%;
+    overflow-y: scroll;
+height: 80vh;
+  }
+  .form-group{
+    margin-bottom: 15px;
+  }
+  header{
+    background-color: #f6f4f9;
+    padding-block: 15px;
+  }
+  .forms-title{
+    margin-top: 15px;
+  }
