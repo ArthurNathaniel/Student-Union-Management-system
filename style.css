@@ -69,3 +69,70 @@ header {
     border: 2px solid;
     border-radius: 5px;
 }
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.logins-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.login-button {
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background-color: navy;
+}
+
+.login-button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+
+/* Executive CSS */
+.executive {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.executive-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.executive-card {
+    width: 95%;
+}
+
+.log-out-btn {
+    border: 2px solid;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 35px;
+    border-radius: 5px;
+    background-color: navy;
+    color: #fff;
+    text-decoration: none;
+}
+
+.log-out-btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+#profile-picture{
+    width: 200px;
+    height: 200px;
+}
