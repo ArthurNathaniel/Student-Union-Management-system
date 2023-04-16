@@ -95,7 +95,17 @@
           </h2>
         </header>
         <div class="row member-registration">
+          <div class="forms-title">
+            <h4>Change Profile Picture</h4>
+          </div>
+          <div class="form-group">
 
+            <img src="images/terry.jpg" id="profile-picture" width="200" height="200" style="border-radius: 50%;">
+            <br>
+            <label for="profile-picture-input"    class="profile-picture-input">Upload a Profile Picture</label>
+            <input type="file" id="profile-picture-input" accept="image/*" style="display: none;">
+          </div>
+        
           <div class="forms-title">
             <h4>Personal Information:</h4>
           </div>
@@ -135,7 +145,7 @@
           </div>
 
 
-          
+
           <div class="forms-title">
             <h4>Contact Details:</h4>
           </div>
@@ -151,12 +161,12 @@
           </div>
 
           <div class="form-group col-md-6">
-            <label for="phonenumber">Phone Number</label>
+            <label for="phone-number">Phone Number</label>
             <input type="number" min="0" class="form-control" id="Phonenumber" placeholder="Phone Number">
           </div>
 
           <div class="form-group col-md-6">
-            <label for="Address">Email Address</label>
+            <label for="address">Email Address</label>
             <input type="email" class="form-control" id="address" placeholder="Email Address">
           </div>
 
@@ -165,8 +175,8 @@
           </div>
 
           <div class="form-group col-md-6">
-            <label for="baptism">Current Level</label>
-            <select id="baptism" class="form-control">
+            <label for="current-level">Current Level</label>
+            <select id="current-level" class="form-control">
               <option selected>Choose...</option>
               <option> High School</option>
               <option>Vocational School</option>
@@ -175,7 +185,7 @@
           </div>
 
           <div class="form-group col-md-6">
-            <label for="baptism">Institution</label>
+            <label for="institution">Institution</label>
             <input type="text" class="form-control" id="address" placeholder="Name  of the Institution">
           </div>
 
@@ -201,10 +211,19 @@
             </select>
           </div>
 
-        
-          
-          
-        
+          <div class="forms-title">
+            <h4>Leadership Information:</h4>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="institution">Position Name</label>
+            <input type="text" class="form-control" id="address" placeholder="Name  of the Position">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="institution">Year (Duration)</label>
+            <input type="text" class="form-control" id="address" placeholder="Year">
+          </div>
+
+
 
         </div>
         <div class="text-center " style="
@@ -219,6 +238,27 @@
 
     </div>
   </div>
+
+  <script>
+    // Get the input element for profile picture
+    var profilePictureInput = document.getElementById('profile-picture-input');
+
+    // Add an event listener for file selection
+    profilePictureInput.addEventListener('change', function (e) {
+      var file = e.target.files[0];
+      var reader = new FileReader();
+
+      // Read the selected file as a data URL
+      reader.onload = function (event) {
+        // Set the data URL as the source of the profile picture
+        document.getElementById('profile-picture').src = event.target.result;
+      };
+
+      // Read the file as data URL
+      reader.readAsDataURL(file);
+    });
+
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
